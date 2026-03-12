@@ -1,0 +1,44 @@
+{
+  "expo": {
+    "name": "QueuePass",
+    "slug": "queuepass",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icons/app-icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/images/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#1C0A00"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.queuepass.app",
+      "infoPlist": {
+        "NSCameraUsageDescription": "QueuePass needs camera access to scan temple entry QR codes.",
+        "NSPhotoLibraryUsageDescription": "QueuePass needs photo library access."
+      }
+    },
+    "android": {
+      "package": "com.queuepass.app",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/icons/app-icon.png",
+        "backgroundColor": "#1C0A00"
+      },
+      "permissions": [
+        "CAMERA",
+        "READ_EXTERNAL_STORAGE",
+        "VIBRATE",
+        "RECEIVE_BOOT_COMPLETED"
+      ]
+    },
+    "plugins": [
+      ["expo-camera", { "cameraPermission": "Allow QueuePass to access camera to scan QR codes." }],
+      ["expo-notifications", {
+        "icon": "./assets/icons/notification-icon.png",
+        "color": "#D4760A"
+      }]
+    ]
+  }
+}
