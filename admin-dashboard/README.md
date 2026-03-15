@@ -1,4 +1,4 @@
-# QueuePass Admin Dashboard
+# Qude Admin Dashboard
 
 Dark command-center web dashboard for temple administrators to manage queues, monitor real-time flow, and control gate access.
 

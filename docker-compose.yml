@@ -39,7 +39,7 @@ services:
       PGDATA:            /var/lib/postgresql/data/pgdata
     volumes:
       - pgdata:/var/lib/postgresql/data
-      - ./queuepass-backend/migrations:/docker-entrypoint-initdb.d:ro
+      - ./backend/migrations:/docker-entrypoint-initdb.d:ro
     healthcheck:
       test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-qude_user} -d ${POSTGRES_DB:-qude}"]
       interval: 10s
@@ -73,7 +73,7 @@ services:
   # ── Backend API ────────────────────────────────────────────────────────────
   api:
     build:
-      context: ./queuepass-backend
+      context: ./backend
       dockerfile: Dockerfile
       target: development
     container_name: qude_api
@@ -89,7 +89,7 @@ services:
       POSTGRES_HOST: postgres
       REDIS_HOST:    redis
     volumes:
-      - ./queuepass-backend:/app
+      - ./backend:/app
       - /app/node_modules              # Preserve container node_modules
     depends_on:
       postgres:
@@ -107,7 +107,7 @@ services:
   # ── Admin Dashboard ────────────────────────────────────────────────────────
   admin:
     build:
-      context: ./queuepass-admin
+      context: ./admin-dashboard
       dockerfile: Dockerfile
       target: development
     container_name: qude_admin
@@ -121,7 +121,7 @@ services:
       VITE_SOCKET_URL: http://localhost:${PORT:-5000}
       VITE_APP_NAME:   Qude Admin
     volumes:
-      - ./queuepass-admin:/app
+      - ./admin-dashboard:/app
       - /app/node_modules
     depends_on:
       api:
@@ -131,7 +131,7 @@ services:
   # ── Gate Scanner ───────────────────────────────────────────────────────────
   gate:
     build:
-      context: ./queuepass-gate
+      context: ./gate-scanner
       dockerfile: Dockerfile
       target: development
     container_name: qude_gate
@@ -144,7 +144,7 @@ services:
       VITE_API_URL:    http://localhost:${PORT:-5000}/api
       VITE_SOCKET_URL: http://localhost:${PORT:-5000}
     volumes:
-      - ./queuepass-gate:/app
+      - ./gate-scanner:/app
       - /app/node_modules
     depends_on:
       api:

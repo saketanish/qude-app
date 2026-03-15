@@ -1,4 +1,4 @@
-# QueuePass Gate Scanner
+# Qude Gate Scanner
 
 Tablet/kiosk web app for gate operators at temple entrances. Runs on any tablet with a webcam — no app install required.
 

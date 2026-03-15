@@ -28,7 +28,7 @@ const RESULT_CONFIG = {
   invalid: {
     color: C.reject, bg: C.rejectBg, glow: C.rejectGlow,
     icon: '✕', headline: 'INVALID QR CODE',
-    subtext: 'Not a valid QueuePass token',
+    subtext: 'Not a valid Qude token',
     border: C.reject,
   },
 };

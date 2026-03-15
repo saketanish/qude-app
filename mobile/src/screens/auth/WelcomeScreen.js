@@ -71,7 +71,7 @@ export default function WelcomeScreen({ navigation }) {
         <Animated.View
           style={[styles.textSection, { opacity: fadeAnim, transform: [{ translateY: slideAnim }] }]}
         >
-          <Text style={styles.appName}>QueuePass</Text>
+          <Text style={styles.appName}>Qude</Text>
           <Text style={styles.tagline}>Skip the line.{'\n'}Preserve the divine.</Text>
           <View style={styles.divider} />
           <Text style={styles.subtitle}>

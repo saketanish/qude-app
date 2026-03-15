@@ -1,7 +1,7 @@
 {
-  "name": "queuepass-backend",
+  "name": "backend",
   "version": "1.0.0",
-  "description": "QueuePass - Digital Queue Management System Backend",
+  "description": "Qude - Digital Queue Management System Backend",
   "main": "src/index.js",
   "scripts": {
     "dev": "nodemon src/index.js",

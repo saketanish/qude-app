@@ -63,7 +63,7 @@ export default function Login() {
             marginBottom: 16, boxShadow: '0 8px 32px rgba(201,123,42,0.3)',
           }}>🛕</div>
           <h1 style={{ fontFamily: 'var(--font-display)', fontSize: 26, fontWeight: 600, color: 'var(--text-primary)' }}>
-            QueuePass
+            <Qude></Qude>
           </h1>
           <p style={{ color: 'var(--text-muted)', fontSize: 13, marginTop: 4 }}>Admin Console</p>
         </div>

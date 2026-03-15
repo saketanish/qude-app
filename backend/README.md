@@ -1,6 +1,6 @@
-# QueuePass Backend API
+# Qude Backend API
 
-Node.js + Express + Socket.io backend for the QueuePass digital queue management system.
+Node.js + Express + Socket.io backend for the Qude digital queue management system.
 
 ## 🚀 Quick Start
 
@@ -191,7 +191,7 @@ NODE_ENV=development
 
 DB_HOST=localhost
 DB_PORT=5432
-DB_NAME=queuepass
+DB_NAME=qude
 DB_USER=postgres
 DB_PASSWORD=yourpassword
 

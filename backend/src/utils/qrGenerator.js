@@ -10,7 +10,7 @@ const generateTokenQRString = (tokenId, queueId) => {
   const timestamp = Date.now();
   const raw = `${tokenId}:${queueId}:${timestamp}`;
   const hash = crypto
-    .createHmac('sha256', process.env.TOKEN_QR_SECRET || 'queuepass_secret')
+    .createHmac('sha256', process.env.TOKEN_QR_SECRET || 'qude_secret')
     .update(raw)
     .digest('hex')
     .substring(0, 12);

@@ -121,7 +121,7 @@ export default function AppNavigator() {
     return (
       <View style={styles.splash}>
         <Text style={styles.splashEmoji}>🛕</Text>
-        <Text style={styles.splashTitle}>QueuePass</Text>
+        <Text style={styles.splashTitle}>Qude</Text>
         <ActivityIndicator color={COLORS.primary} style={{ marginTop: 24 }} />
       </View>
     );

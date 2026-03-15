@@ -35,7 +35,7 @@ export default function Sidebar() {
           }}>🛕</div>
           <div>
             <div style={{ fontFamily: 'var(--font-display)', fontSize: 15, fontWeight: 600, color: 'var(--text-primary)' }}>
-              QueuePass
+              Qude
             </div>
             <div style={{ fontSize: 11, color: 'var(--text-muted)', marginTop: 1 }}>Admin Console</div>
           </div>

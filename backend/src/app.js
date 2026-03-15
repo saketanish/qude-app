@@ -23,7 +23,7 @@ app.use(express.urlencoded({ extended: true }));
 
 // Health check
 app.get('/health', (req, res) => {
-  res.json({ status: 'ok', service: 'QueuePass API', version: '1.0.0' });
+  res.json({ status: 'ok', service: 'Qude API', version: '1.0.0' });
 });
 
 // API routes

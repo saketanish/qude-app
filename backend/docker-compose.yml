@@ -3,10 +3,10 @@ version: '3.8'
 services:
   postgres:
     image: postgres:15-alpine
-    container_name: queuepass_db
+    container_name: qude_db
     restart: unless-stopped
     environment:
-      POSTGRES_DB: queuepass
+      POSTGRES_DB: qude
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: yourpassword
     ports:
@@ -16,7 +16,7 @@ services:
 
   redis:
     image: redis:7-alpine
-    container_name: queuepass_redis
+    container_name: qude_redis
     restart: unless-stopped
     ports:
       - "6379:6379"

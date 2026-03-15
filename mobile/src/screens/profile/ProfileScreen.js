@@ -80,7 +80,7 @@ export default function ProfileScreen() {
           </View>
         </View>
 
-        <Text style={styles.version}>QueuePass v1.0.0</Text>
+        <Text style={styles.version}>Qude v1.0.0</Text>
       </ScrollView>
     </SafeAreaView>
   );

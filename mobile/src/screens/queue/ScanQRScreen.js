@@ -63,7 +63,7 @@ export default function ScanQRScreen({ navigation }) {
           <Text style={styles.permIcon}>📷</Text>
           <Text style={styles.permTitle}>Camera Access Needed</Text>
           <Text style={styles.permText}>
-            QueuePass needs camera access to scan the temple entrance QR code and get you in the queue.
+            Qude needs camera access to scan the temple entrance QR code and get you in the queue.
           </Text>
           <TouchableOpacity style={styles.permBtn} onPress={requestPermission}>
             <Text style={styles.permBtnText}>Grant Camera Access</Text>

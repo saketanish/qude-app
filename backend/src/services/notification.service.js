@@ -68,30 +68,30 @@ const sendWhatsApp = async (to, message) => {
 // ─── Notification Templates ───────────────────────────────────────────────────
 
 const notifyTokenIssued = async (phone, tokenNumber, queueName, waitMinutes) => {
-  const msg = `🛕 QueuePass: Your token #${tokenNumber} is confirmed for ${queueName}. Estimated wait: ~${waitMinutes} mins. Keep this token safe - you'll need it to enter. Reply CANCEL to cancel.`;
+  const msg = `🛕 Qude: Your token #${tokenNumber} is confirmed for ${queueName}. Estimated wait: ~${waitMinutes} mins. Keep this token safe - you'll need it to enter. Reply CANCEL to cancel.`;
   await sendSMS(phone, msg);
   await sendWhatsApp(phone, msg);
 };
 
 const notifyNearTurn = async (phone, tokenNumber, queueName, aheadCount) => {
-  const msg = `🔔 QueuePass: You are #${aheadCount} away in ${queueName} queue! Token #${tokenNumber}. Please make your way to the entrance now. Have your QR code ready.`;
+  const msg = `🔔 Qude: You are #${aheadCount} away in ${queueName} queue! Token #${tokenNumber}. Please make your way to the entrance now. Have your QR code ready.`;
   await sendSMS(phone, msg);
   await sendWhatsApp(phone, msg);
 };
 
 const notifyCalledToGate = async (phone, tokenNumber, queueName) => {
-  const msg = `✅ QueuePass: Token #${tokenNumber} - YOUR TURN NOW! Please present your QR code at the ${queueName} entrance immediately. Valid for 10 minutes only.`;
+  const msg = `✅ Qude: Token #${tokenNumber} - YOUR TURN NOW! Please present your QR code at the ${queueName} entrance immediately. Valid for 10 minutes only.`;
   await sendSMS(phone, msg);
   await sendWhatsApp(phone, msg);
 };
 
 const notifyTokenExpired = async (phone, tokenNumber) => {
-  const msg = `⚠️ QueuePass: Token #${tokenNumber} has expired as you were not present when called. Please scan the entrance QR to rejoin the queue.`;
+  const msg = `⚠️ Qude: Token #${tokenNumber} has expired as you were not present when called. Please scan the entrance QR to rejoin the queue.`;
   await sendSMS(phone, msg);
 };
 
 const notifyOTP = async (phone, otp) => {
-  const msg = `Your QueuePass OTP is: ${otp}. Valid for ${process.env.OTP_EXPIRY_MINUTES || 10} minutes. Do not share this with anyone.`;
+  const msg = `Your Qude OTP is: ${otp}. Valid for ${process.env.OTP_EXPIRY_MINUTES || 10} minutes. Do not share this with anyone.`;
   await sendSMS(phone, msg);
 };
 

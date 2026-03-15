@@ -1,5 +1,5 @@
 -- =============================================
--- QueuePass Database Migrations
+-- Qude Database Migrations
 -- Run in order: 001 → 005
 -- =============================================
 

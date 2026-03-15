@@ -121,7 +121,7 @@ export default function Notifications() {
           <div style={{ marginTop: 10, padding: '14px 16px', background: 'var(--amber-ghost)', borderRadius: 10, border: '1px solid var(--amber-dim)' }}>
             <p style={{ fontSize: 12, color: 'var(--amber)', fontWeight: 600, marginBottom: 4 }}>💡 Automatic Notifications</p>
             <p style={{ fontSize: 12, color: 'var(--text-secondary)', lineHeight: 1.6 }}>
-              QueuePass automatically sends SMS & WhatsApp to devotees when:
+              Qude automatically sends SMS & WhatsApp to devotees when:
               their token is issued, they are 10 positions away, and when they are called to the gate.
             </p>
           </div>

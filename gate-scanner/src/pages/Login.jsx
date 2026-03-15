@@ -65,7 +65,7 @@ export default function Login() {
                 fontSize: 26, fontWeight: 800, color: C.text,
                 letterSpacing: 1, textTransform: 'uppercase',
               }}>Gate Scanner</div>
-              <div style={{ fontSize: 12, color: C.textSec, marginTop: 1 }}>QueuePass • Temple Access Control</div>
+              <div style={{ fontSize: 12, color: C.textSec, marginTop: 1 }}>Qude • Temple Access Control</div>
             </div>
           </div>
         </div>

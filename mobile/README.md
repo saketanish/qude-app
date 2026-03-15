@@ -1,6 +1,6 @@
-# QueuePass Mobile App (React Native + Expo)
+# Qude Mobile App (React Native + Expo)
 
-The devotee-facing mobile app for QueuePass. Lets users scan temple QR codes, join queues, track their position in real-time, and enter via QR at the gate.
+The devotee-facing mobile app for Qude. Lets users scan temple QR codes, join queues, track their position in real-time, and enter via QR at the gate.
 
 ---
 

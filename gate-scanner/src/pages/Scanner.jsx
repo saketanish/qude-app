@@ -70,7 +70,7 @@ export default function Scanner() {
               fontSize: 18, fontWeight: 800, letterSpacing: 1,
               textTransform: 'uppercase', color: C.text,
             }}>Gate Scanner</div>
-            <div style={{ fontSize: 11, color: C.textSec }}>QueuePass Access Control</div>
+            <div style={{ fontSize: 11, color: C.textSec }}>Qude Access Control</div>
           </div>
         </div>
 

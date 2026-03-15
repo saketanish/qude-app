@@ -1,12 +1,12 @@
-# QueuePass — Full Project Folder Structure
+# Qude — Full Project Folder Structure
 
 ## Overview
-Complete monorepo structure for the QueuePass digital queue management system.
+Complete monorepo structure for the Qude digital queue management system.
 
 ---
 
 ```
-queuepass/
+qude-app/
 ├── README.md
 ├── .gitignore
 ├── docker-compose.yml                  # Local dev: PostgreSQL + Redis
@@ -272,8 +272,8 @@ entry_logs: id, token_id, gate_id, scanned_at, result (success/fail/expired)
 
 ```bash
 # 1. Clone & install
-git clone https://github.com/yourname/queuepass
-cd queuepass
+git clone https://github.com/yourname/qude-app
+cd qude-app
 
 # 2. Start DB & Redis
 docker-compose up -d

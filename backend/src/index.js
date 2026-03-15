@@ -26,7 +26,7 @@ setupSocket(io);
 
 // Start server
 server.listen(PORT, () => {
-  logger.info(`🚀 QueuePass API running on port ${PORT}`);
+  logger.info(`🚀 Qude API running on port ${PORT}`);
   logger.info(`🌍 Environment: ${process.env.NODE_ENV || 'development'}`);
   logger.info(`📡 WebSocket server ready`);
 });
